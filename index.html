@@ -159,41 +159,39 @@
              </div>
          <!-- FIM DO MENU -->
             <!-- MODAL-CART -->
-             <div class="bg-black/50 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden" id="cart-modal">
-                <div class="bg-white p-5 rounded-md min-w[90%] md:min-w[800px]">
+            <div class="bg-black/50 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden overflow-auto" id="cart-modal">
+                <div class="bg-white p-5 rounded-md min-w[90%] min-h[60%] md:min-w[800px] md:mt-10">
                     <h2 class="text-center font-bold text-2xl mb-2">Meu carrinho</h2>
-                    <div class="flex justify-between mb-2 flex-col" id="cart-items"></div>
-                         <div class="">
-                            <label class="font-bold" for="">Total</label>
-                            <span class="font-bold" id="cart-total"></span>
-                         </div>
-                      
-                        <p class="text-white"> Veja meu carrinho</p>
-                        <div class="">
-                            <p class="font-bold mt-4">Endereço de entrega:</p>
-                            <input type="text" placeholder="digite seu endereço" class="w-full border-2 p-1 rounded my-1" id="address">
-                            <p class="text-red-600 hidden" id="address-warn">Digite seu endereço completo</p> 
-                        </div>
-
-                        <div class="">
-                            <p class="font-bold mt-4">Nome:</p>
-                            <input type="text" placeholder="digite seu nome" class="w-full border-2 p-1 rounded my-1" id="name">
-                            <p class="text-red-600 hidden" id="name-warn">Digite seu nome</p> 
-                        </div>
-
-                        <div class="">
-                            <p class="font-bold mt-4">Obeservação:</p>
-                            <input type="text" placeholder="ex: sem batata" class="w-full border-2 p-1 rounded my-1" id="observer">
-                            <p class="text-red-600 hidden" id="observer-warn">Digite seu nome</p> 
-                        </div>
-
+                    <div class="flex justify-between flex-col" id="cart-items">
+                        <!-- Itens do carrinho aqui -->
+                    </div>
+                    <div class="">
+                        <label class="font-bold" for="">Total</label>
+                        <span class="font-bold" id="cart-total"></span>
+                    </div>
+                    <p class="text-white"> Veja meu carrinho</p>
+                    <div class="">
+                        <p class="font-bold mt-4">Endereço de entrega:</p>
+                        <input type="text" placeholder="digite seu endereço" class="w-full border-2 p-1 rounded my-1" id="address">
+                        <p class="text-red-600 hidden" id="address-warn">Digite seu endereço completo</p> 
+                    </div>
+                    <div class="">
+                        <p class="font-bold mt-4">Nome:</p>
+                        <input type="text" placeholder="digite seu nome" class="w-full border-2 p-1 rounded my-1" id="name">
+                        <p class="text-red-600 hidden" id="name-warn">Digite seu nome</p> 
+                    </div>
+                    <div class="">
+                        <p class="font-bold mt-4">Observação:</p>
+                        <input type="text" placeholder="ex: sem batata" class="w-full border-2 p-1 rounded my-1" id="observer">
+                        <p class="text-red-600 hidden" id="observer-warn">Digite sua observação</p> 
+                    </div>
                     <div class="flex items-center justify-between mt-5 w-full">
                         <button id="close-modal-btn">Fechar</button>
-                        <button type="submit" id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">finalizae pedido</button>
+                        <button type="submit" id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Finalizar pedido</button>
                     </div>
                 </div>
-
-             </div>
+            </div>
+            
             <!-- FIM MODAL-CART -->
 
          <footer class="w-full bg-blue-500 py-2 z-40 fixed bottom-0  mt-4 text-center">

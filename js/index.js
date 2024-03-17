@@ -151,20 +151,20 @@ cartBtn.addEventListener("click", function() {
  
           
         const isOpen = checkLanchonetOpen();
-         if(!isOpen){
-             Toastify({
-                text: "Lanchonete fechada",
-                duration: 3000,
-                close: true,
-                gravity: "top", // `top` or `bottom`
-                position: "center", // `left`, `center` or `right`
-                stopOnFocus: true, // Prevents dismissing of toast on hover
-                style: {
-                  background: "#ef4444",
-                },
-             }).showToast();
-            return;
-         }
+        //  if(!isOpen){
+        //      Toastify({
+        //         text: "Lanchonete fechada",
+        //         duration: 3000,
+        //         close: true,
+        //         gravity: "top", // `top` or `bottom`
+        //         position: "center", // `left`, `center` or `right`
+        //         stopOnFocus: true, // Prevents dismissing of toast on hover
+        //         style: {
+        //           background: "#ef4444",
+        //         },
+        //      }).showToast();
+        //     return;
+        //  }
 
         if(addressInput.length === 0) return;
 

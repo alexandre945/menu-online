@@ -16,6 +16,7 @@ const observerIpunt = document.getElementById("observer")
 let cart = [];
 
 // Função para carregar o carrinho salvo no localStorage ao iniciar a aplicação
+
 function loadCartFromLocalStorage() {
     const savedCart = localStorage.getItem('cart');
 
@@ -23,6 +24,17 @@ function loadCartFromLocalStorage() {
         cart = JSON.parse(savedCart);
     }
 }
+
+// Inicialização: Carregar o carrinho salvo no localStorage ao iniciar a aplicação
+
+loadCartFromLocalStorage();
+updateCartModal();
+
+// Limpar o carrinho ao atualizar a página
+
+window.addEventListener('beforeunload', function() {
+    localStorage.removeItem('cart');
+});
 
 // Carregar o carrinho salvo no localStorage ao iniciar a aplicação
 loadCartFromLocalStorage();

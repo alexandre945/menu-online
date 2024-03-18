@@ -40,24 +40,28 @@ window.addEventListener('beforeunload', function() {
 loadCartFromLocalStorage();
 
 //abrir o madal
+
 cartBtn.addEventListener("click", function() {
     updateCartModal();
     cartModal.style.display = "flex"
 })
 
 //fechar modal clicando fora
+
 cartModal.addEventListener("click", function(event) {
     if(event.target === cartModal){
         cartModal.style.display = "none"
     }
 })
 
-//fechar modal clicando no fechar
+//fechar modal clicando no botão de fechar
+
 closeModalBtn.addEventListener("click", function() {
     cartModal.style.display = "none"
 })
 
 //adicionar item ao carrinho
+
 menu.addEventListener("click", function(event) {
     let parrentButton = event.target.closest(".add-to-cart-btn")
     const name = parrentButton.getAttribute("data-name")
@@ -66,7 +70,8 @@ menu.addEventListener("click", function(event) {
     addToCart(name, price)
 })
 
-//função para adicionar imtem ao carrinho
+//função para adicionar imtem ao carrinho verificando se for o mesmo soma + um
+
 function addToCart(name, price){
     const existingItem = cart.find(item => item.name === name)
 
@@ -80,12 +85,14 @@ function addToCart(name, price){
         }) 
     }
     // Atualiza o carrinho no localStorage
+
     localStorage.setItem('cart', JSON.stringify(cart));
 
     updateCartModal()
 }
 
 //atualiza carrinho
+
 function updateCartModal() {
     cartItemsContainer.innerHTML = '';
     let total = 0;
@@ -96,7 +103,7 @@ function updateCartModal() {
 
         cartItemElement.innerHTML = `
             <div class="flex items-center justify-between">
-                <div class="p-4 mb-2">
+                <div class="">
                     <p class="font-medium">${item.name}</p>
                     <p>qtd: ${item.quantity}</p>
                     <p class="font-medium"> R$ ${item.price.toFixed(2)}</p>
@@ -178,7 +185,9 @@ checkoutBtn.addEventListener("click", function() {
     //     return;
     //  }
 
-    if(addressInput.length === 0) return;
+    if(addressInput.length === 0) {
+        return;
+    }
 
     if(addressInput.value === ""){
         addressWarn.classList.remove("hidden")
@@ -217,10 +226,12 @@ checkoutBtn.addEventListener("click", function() {
 })
 
 function checkLanchonetOpen(){
+
    const data = new Date();
    const hora = data.getHours();
-   return hora > 19 && hora < 24; //true
-
+   const diaDaSemana = data.getDay();
+   return (diaDaSemana !== 1) && (hora > 19 && hora < 24); // true ou false
+   
 }
 
 const dataEspan = document.getElementById("data-span")

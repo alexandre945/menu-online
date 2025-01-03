@@ -2,11 +2,12 @@
 module.exports = {
   content: ["./**/*.{html,js}"],
   theme: {
-    extend: {
-      backgroundImage:{
-        "home": "url('/assets/fundo.png')"
-      }
-    },
+
+    // extend: {
+    //   backgroundImage:{
+    //     "home": "url('/assets/fundo.png')"
+    //   }
+    // },
   },
   plugins: [],
 }

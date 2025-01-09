@@ -223,7 +223,7 @@ checkoutBtn.addEventListener("click", function() {
     cart = [];
     updateCartModal();
 
-})
+    })
 
 function checkLanchonetOpen(){
 

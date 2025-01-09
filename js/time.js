@@ -31,7 +31,7 @@ function getStatusLanchonete() {
 document.addEventListener("DOMContentLoaded", () => {
     const status = getStatusLanchonete();
     const statusContainer = document.getElementById("status-container");
-    const botaoContainer = document.getElementById("botao-container");
+    const botoesContainers = document.querySelectorAll(".botao-container"); // Seleciona todos os contêineres de botões
 
     // Atualiza o status no cabeçalho
     statusContainer.innerHTML = `
@@ -40,6 +40,8 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
     `;
 
-    // Define a visibilidade do container dos botões
-    botaoContainer.style.display = status.aberta ? "block" : "none";
+    // Define a visibilidade de todos os contêineres de botões
+    botoesContainers.forEach((container) => {
+        container.style.display = status.aberta ? "block" : "none"; // Exibe ou oculta cada contêiner
+    });
 });

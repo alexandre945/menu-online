@@ -17,6 +17,18 @@
 
     <link rel="stylesheet" href="./css/output.css" />
     <title>Burgue</title>
+    <style>
+      .cart-footer {
+    position: fixed;
+    right: 15px; /* Alinha no lado direito com 10px de margem */
+    bottom: 15px; /* Define a margem inferior de 10px */
+    z-index: 1000; /* Garante que ficará acima de outros elementos */
+    width: auto; /* Ajusta o tamanho do footer */
+    max-width: none; /* Remove o limite de largura */
+    margin: 0; /* Remove margens adicionais */
+}
+
+    </style>
 </head>
 <body>
     <!-- HEADER -->
@@ -45,6 +57,9 @@
       
     
     <!-- FIM DO HEADER -->
+  <div class="relative min-h-screen">
+
+  
         <div class="text-center font-bold">
           <marquee class=" p-4" style="background-color: rgb(190, 215, 239);">
             APENAS DELIVERY
@@ -56,6 +71,9 @@
      <p class="text-sm md:3xl font-bold text-center mt-9 mb-6">Faça seu pedido aqui e saboreie o melhor Lanche da cidade </p>
 
          <!-- INICIO DO MENU -->
+              <div class="max-auto max-w-7xl px-2 my-2">
+                <h2 class="font-bold text-3xl text-center p-4 items-center" style="background-color: rgb(173, 167, 167); padding:4px;">LANCHES</h2>
+              </div>
              <div class="mb-5" id="menu">
                 <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 lg:px-8 mx-auto max-w-7xl px-2 mb-15">
                    <!-- PRODUTO-ITEM  -->
@@ -220,14 +238,14 @@
 
                       <!-- porções -->
                         <div class="max-auto max-w-7xl px-2 my-2">
-                          <h2 class="font-bold text-3xl text-center p-4 items-center">Porçoẽs</h2>
+                          <h2 class="font-bold text-3xl text-center p-4 items-center" style="background-color: rgb(173, 167, 167); padding:4px;">PORÇOẼS</h2>
                         </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 lg:px-8 mx-auto max-w-7xl px-2 mb-15">
                   <div class=" flex gap-2">
                     <img src="./assets/ffritas.png" alt="foto do lanche" 
                     class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                     <div class="">
-                        <p class="font-bold">FRITAS BACON</p>
+                        <p class="font-bold" >FRITAS BACON</p>
                         <p class="text-sm">
                           600g de batata frita coberta com  chaddar cremoso e bacon crocante.
                         </p>
@@ -295,7 +313,7 @@
              
 
                 <div class="max-auto max-w-7xl px-2 my-2">
-                    <h2 class="font-bold text-3xl text-center p-4 items-center">Bebidas</h2>
+                    <h2 class="font-bold text-3xl text-center p-4 items-center" style="background-color: rgb(173, 167, 167); padding:4px;">BEBIDAS</h2>
                 </div>
                 <!-- GRIDI BEBIDAS -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 lg:px-8 mx-auto max-w-7xl px-2 mb-15" id="menu">
@@ -411,17 +429,18 @@
             </div>
             
             <!-- FIM MODAL-CART -->
-            <footer class="bg-blue-500 py-2 mb-4 rounded mx-auto text-center ml-2 mr-2 max-w-md mt-6">
-                <button class="text-center" id="cart-btn">
-                  <div class="flex items-center gap-2">
+           <!-- Carrinho fixo no canto inferior direito -->
+           <footer class=" cart-footer bg-red-500 py-2 px-4 rounded z-50">
+            <button class="text-center" id="cart-btn">
+              <p class="text-sm text-white">SEU CARRINHO</p>
+                <div class="flex items-center gap-2">
                     <i class="fa fa-cart-plus text-lg text-white"></i>
                     <span class="text-white" id="cart-count">( )</span>
-                  </div>
-                </button>
-              </footer>
+                </div>
+            </button>
+          </footer>
+  </div>            
               
-              
-
          <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
          <script src="./js/index.js"></script>
          <script src="js/time.js"></script>

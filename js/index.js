@@ -217,7 +217,7 @@ checkoutBtn.addEventListener("click", function() {
                                                     \n\nEntregar para: ${nameIpunt.value}
                                                     \n\nObservação ${observerIpunt.value}`);
     
-    const phone = "+5535984164960";
+    const phone = "+5535998464219";
     window.open(`https://wa.me/${phone}?text=${message}`, "_blank");
     
     cart = [];

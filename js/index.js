@@ -225,22 +225,22 @@ checkoutBtn.addEventListener("click", function() {
 
     })
 
-function checkLanchonetOpen(){
+// function checkLanchonetOpen(){
 
-   const data = new Date();
-   const hora = data.getHours();
-   const diaDaSemana = data.getDay();
-   return (diaDaSemana !== 1) && (hora > 19 && hora < 24); // true ou false
+//    const data = new Date();
+//    const hora = data.getHours();
+//    const diaDaSemana = data.getDay();
+//    return (diaDaSemana !== 1) && (hora > 19 && hora < 24); // true ou false
    
-}
+// }
 
-const dataEspan = document.getElementById("data-span")
-const isOpen = checkLanchonetOpen();
+// const dataEspan = document.getElementById("data-span")
+// const isOpen = checkLanchonetOpen();
 
-if(isOpen){
-    dataEspan.classList.remove("bg-red-500");
-    dataEspan.classList.add("bg-green-600") 
-}else{
-    dataEspan.classList.add("bg-red-500");
-    dataEspan.classList.remove("bg-green-600") 
-}
+// if(isOpen){
+//     dataEspan.classList.remove("bg-red-500");
+//     dataEspan.classList.add("bg-green-600") 
+// }else{
+//     dataEspan.classList.add("bg-red-500");
+//     dataEspan.classList.remove("bg-green-600") 
+// }

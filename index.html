@@ -36,43 +36,38 @@
     <header class="relative w-full h-[400px] bg-cover bg-center" style="background-image: url('assets/fundo.png');">
         <!-- Overlay para opacidade -->
         <div class="absolute inset-0 bg-black bg-opacity-50">
-             <!-- Conteúdo do Header -->
-        <div class="relative z-10 flex flex-col justify-center items-center text-center">
-          <h1 class="text-3xl md:text-6xl font-extrabold text-white mt-6">House Burgue</h1>
-          <h2 class="text-lg md:text-6xl text-gray-200 mt-4 mb-8">A&V</h2>
-         
-        </div>
-          <div class="relative z-10 mt-8">
-            <p class="bg-green-600 text-white px-4 py-2 rounded-lg shadow-md text-center max-w-sm mx-auto">
+          <!-- Conteúdo do Header -->
+          <div class="relative z-10 flex flex-col justify-center items-center text-center h-full">
+            <h1 class="text-3xl md:text-6xl font-extrabold text-white mt-6">House Burgue</h1>
+            <h2 class="text-6xl text-gray-200 mt-4 mb-8">A&V</h2>
+            
+            <!-- Status da Lanchonete -->
+            <div id="status-container" class="relative z-10 mt-8 max-w-sm mx-auto py-2 text-center rounded-lg font-bold" style="width: 300px;"></div>
+          </div>
+        
+          <!-- Horário de Funcionamento no Rodapé -->
+          <div class="absolute bottom-0 w-full flex justify-center mr-2 ml-2">
+            <p class="bg-green-600 text-white px-4 py-2 rounded-lg shadow-md text-center max-w-sm">
               Horário de funcionamento: De Sexta a Domingo, das 19:00 às 24:00
             </p>
-      
           </div>
-                   <!-- Status da Lanchonete -->
-        <div id="status-container" class="relative z-10 mt-8  max-w-sm mx-auto py-2  text-center rounded-lg font-bold" style="width: 300px;"></div>
         </div>
-     
       </header>
       
-      
-    
     <!-- FIM DO HEADER -->
   <div class="relative min-h-screen">
 
-  
-        <div class="text-center font-bold">
-          <marquee class=" p-4" style="background-color: rgb(190, 215, 239);">
-            APENAS DELIVERY
-          </marquee>
-              
-        </div> 
-          
-
      <p class="text-sm md:3xl font-bold text-center mt-9 mb-6">Faça seu pedido aqui e saboreie o melhor Lanche da cidade </p>
+     <div class="text-center font-bold">
+      <marquee class=" p-4 text-ms" style="font-size:12px;">
+        APENAS DELIVERY
+      </marquee>
+          
+     </div> 
 
          <!-- INICIO DO MENU -->
               <div class="max-auto max-w-7xl px-2 my-2">
-                <h2 class="font-bold text-3xl text-center p-4 items-center" style="background-color: rgb(173, 167, 167); padding:4px;">LANCHES</h2>
+                <h2 class="font-bold text-3xl text-center p-4 items-center" style="background-color: rgb(212, 201, 201); padding:4px;">LANCHES</h2>
               </div>
              <div class="mb-5" id="menu">
                 <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 lg:px-8 mx-auto max-w-7xl px-2 mb-15">
@@ -157,7 +152,7 @@
                              <div class="botao-container">
                               <button class="bg-blue-500 px-4 rounded add-to-cart-btn"
                                 data-name="Tripo Burgue"
-                                data-price="28,00" >
+                                data-price="26,00" >
                                 <i class="fa fa-cart-plus text-lg text-white"></i>
                               </button>
                              </div>
@@ -223,7 +218,7 @@
                               <div class="botao-container">
                                 <button class="bg-blue-500 px-4 rounded add-to-cart-btn"
                                   data-name="Salada Burguer"
-                                  data-price="20,00" >
+                                  data-price="21,00" >
                                   <i class="fa fa-cart-plus text-lg text-white"></i>
                                 </button>
                               </div>
@@ -252,6 +247,27 @@
                             </div>
                         </div>
                       </div>
+                      <div class=" flex gap-2">
+                        <img src="./assets/ffritas.png" alt="foto do lanche" 
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                        <div class="">
+                            <p class="font-bold">Para completar seu lanche adicione uma porção de batata frita</p>
+                            <p class="text-sm">
+                             por apenas R$ 7,00
+                            </p>
+
+                            <div class="flex items-center gap-2 justify-between mt-3">
+                                <p class="font-bold text-lg text-red-500">R$ 7,00</p>
+                              <div class="botao-container">
+                                <button class="bg-blue-500 px-4 rounded add-to-cart-btn"
+                                  data-name="Porção de batata frita"
+                                  data-price="7,00" >
+                                  <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
                   
 
                    <!-- FIM PRODUTO-ITEM -->
@@ -260,7 +276,7 @@
 
                       <!-- porções -->
                         <div class="max-auto max-w-7xl px-2 my-2">
-                          <h2 class="font-bold text-3xl text-center p-4 items-center" style="background-color: rgb(173, 167, 167); padding:4px;">PORÇOẼS</h2>
+                          <h2 class="font-bold text-3xl text-center p-4 items-center" style="background-color: rgb(211, 200, 200); padding:4px;">PORÇOẼS</h2>
                         </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 lg:px-8 mx-auto max-w-7xl px-2 mb-15">
                   <div class=" flex gap-2">
@@ -286,7 +302,7 @@
                   </div>
 
                   <div class=" flex gap-2">
-                    <img src="./assets/ffritas.png" alt="foto do lanche" 
+                    <img src="./assets/iscaFrango.png" alt="foto do lanche" 
                     class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                     <div class="">
                         <p class="font-bold">BALDE DO CHEFE</p>
@@ -300,7 +316,7 @@
                            <div class="botao-container">
                             <button class="bg-blue-500 px-4 rounded add-to-cart-btn"
                               data-name="Balde do chefe"
-                              data-price="35,00" >
+                              data-price="45,00" >
                               <i class="fa fa-cart-plus text-lg text-white"></i>
                             </button>
                            </div>
@@ -331,11 +347,76 @@
                       </div>
                     
                 </div>
-              
-             
+                <div class="max-auto max-w-7xl px-2 my-2">
+                  <p class="font-bold text-3xl text-center p-4 items-center" style="background-color: rgb(210, 202, 202); padding:4px;">ADICIONAIS</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 lg:px-8 mx-auto max-w-7xl px-2 mb-15">
+                 
+                   <!-- Adicional - Batata Palito -->
+                  <div class="flex gap-2 mb-4 ">
+                    <div>
+                      <p class="font-bold">Adicional: Batata Palito</p>
+                      <div class="flex items-center justify-between mt-2">
+                        <p class="font-bold text-red-500">R$ 7,00</p>
+                        <button class="bg-blue-500 px-4 py-1 rounded add-to-cart-btn"
+                                data-name="Adicional: Batata Palito"
+                                data-price="7.00">
+                          <i class="fa fa-cart-plus text-white"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                    <!-- Adicional - Mussarela -->
+                    <div class="flex gap-2 mb-4">
+                      <div>
+                        <p class="font-bold">Adicional: Mussarela</p>
+                        <div class="flex items-center justify-between mt-2">
+                          <p class="font-bold text-red-500">R$ 3,50</p>
+                          <button class="bg-blue-500 px-4 py-1 rounded add-to-cart-btn"
+                                  data-name="Adicional: Mussarela"
+                                  data-price="3.50">
+                            <i class="fa fa-cart-plus text-white"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Adicional - Cheddar -->
+                  <div class="flex gap-2 mb-4">
+                    <div>
+                      <p class="font-bold">Adicional: Cheddar</p>
+                      <div class="flex items-center justify-between mt-2">
+                        <p class="font-bold text-red-500">R$ 4,00</p>
+                        <button class="bg-blue-500 px-4 py-1 rounded add-to-cart-btn"
+                                data-name="Adicional: CChedar"
+                                data-price="4.00">
+                          <i class="fa fa-cart-plus text-white"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                 
+                    <!-- Adicional - Bacon -->
+                    <div class="flex gap-2 mb-4">
+                      <div>
+                        <p class="font-bold">Adicional: Bacon</p>
+                        <div class="flex items-center justify-between mt-2">
+                          <p class="font-bold text-red-500">R$ 5,00</p>
+                          <button class="bg-blue-500 px-4 py-1 rounded add-to-cart-btn"
+                                  data-name="Adicional: Bacon"
+                                  data-price="5.00">
+                            <i class="fa fa-cart-plus text-white"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+
+                </div>
+                
 
                 <div class="max-auto max-w-7xl px-2 my-2">
-                    <h2 class="font-bold text-3xl text-center p-4 items-center" style="background-color: rgb(173, 167, 167); padding:4px;">BEBIDAS</h2>
+                    <h2 class="font-bold text-3xl text-center p-4 items-center" style="background-color: rgb(210, 202, 202); padding:4px;">BEBIDAS</h2>
                 </div>
                 <!-- GRIDI BEBIDAS -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 lg:px-8 mx-auto max-w-7xl px-2 mb-15" id="menu">
@@ -356,27 +437,7 @@
                             </div>
                         </div>
                       </div>
-               
-
-                
-                    <!-- <div class=" flex gap-2">
-                        <img src="./assets/guarana.png" alt="foto do lanche" 
-                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
-                        <div class="w-full">
-                            <p class="font-bold">Guaraná Lata</p>
-                            <div class="flex items-center gap-2 justify-between mt-3">
-                                <p class="font-bold text-lg text-red-500">R$ 6.00</p>
-                                <button class="bg-blue-500 px-4 rounded add-to-cart-btn"
-                                  data-name="Guaraná Lata"
-                                  data-price="6.00" >
-                                   <i class="fa fa-cart-plus text-lg text-white"></i>
-                                </button>
-                            </div>
-                        </div>
-                      </div> -->
-               
-
-               
+     
                   <div class=" flex gap-2">
                       <img src="./assets/fantalaranja.png" alt="foto do lanche" 
                       class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">

@@ -43,21 +43,24 @@ loadCartFromLocalStorage();
 
 cartBtn.addEventListener("click", function() {
     updateCartModal();
-    cartModal.style.display = "flex"
+    cartModal.style.display = "flex";
+    cartBtn.style.display = "none";
 })
 
 //fechar modal clicando fora
 
 cartModal.addEventListener("click", function(event) {
     if(event.target === cartModal){
-        cartModal.style.display = "none"
+        cartModal.style.display = "none";
+        cartBtn.style.display = "flex";
     }
 })
 
 //fechar modal clicando no botão de fechar
 
 closeModalBtn.addEventListener("click", function() {
-    cartModal.style.display = "none"
+    cartModal.style.display = "none";
+    cartBtn.style.display = "flex";
 })
 
 //adicionar item ao carrinho

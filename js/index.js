@@ -8,10 +8,10 @@ const checkoutBtn = document.getElementById("checkout-btn")
 const closeModalBtn = document.getElementById("close-modal-btn")
 const cartCount = document.getElementById("cart-count")
 const addressInput = document.getElementById("address")
-const nameIpunt = document.getElementById("name")
+const nameInpunt = document.getElementById("name")
 const addressWarn = document.getElementById("address-warn")
 const nameWarn = document.getElementById("name-warn")
-const observerIpunt = document.getElementById("observer")
+const observerInpunt = document.getElementById("observer")
 
 let cart = [];
 
@@ -169,7 +169,8 @@ addressInput.addEventListener("input", function(event) {
   
 })
 
-checkoutBtn.addEventListener("click", function() {
+checkoutBtn.addEventListener("click", function() 
+{
  
       
     const isOpen = checkLanchonetOpen();
@@ -187,6 +188,7 @@ checkoutBtn.addEventListener("click", function() {
     //      }).showToast();
     //     return;
     //  }
+   
 
     if(addressInput.length === 0) {
         return;
@@ -198,13 +200,11 @@ checkoutBtn.addEventListener("click", function() {
         return;
     }
 
-    if(nameIpunt.value === ""){
+    if(nameInpunt.value === ""){
         nameWarn.classList.remove("hidden")
-        nameIpunt.classList.add("border-red-500")
+        nameInpunt.classList.add("border-red-500")
         return;
     }
-
-   
 
     const cartItems = cart.map((item) => {
         return (
@@ -215,17 +215,16 @@ checkoutBtn.addEventListener("click", function() {
     const total = cart.reduce((acc, item) => acc + (item.price * item.quantity), 0);
 
     const message = encodeURIComponent(`NOVO PEDIDO\n\n${cartItems}
-                                                    \nTotal: R$${total.toFixed(2)}
+                                                    \nTotal: ${total.toFixed(2)}
                                                     \n\nEndereço: ${addressInput.value}
-                                                    \n\nEntregar para: ${nameIpunt.value}
-                                                    \n\nObservação ${observerIpunt.value}`);
+                                                    \n\nEntregar para: ${nameInpunt.value}
+                                                    \n\nObservação ${observerInpunt.value}`);
     
-    const phone = "+5535984164960";
+    const phone = "+5535998464219";
     window.open(`https://wa.me/${phone}?text=${message}`, "_blank");
-    
-    cart = [];
-    updateCartModal();
-
+      
+        cart = [];
+        updateCartModal();
     })
 
 function checkLanchonetOpen(){

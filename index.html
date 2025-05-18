@@ -33,37 +33,32 @@
 <body>
     <!-- HEADER -->
 
-    <header class="relative w-full h-[400px] bg-cover bg-center" style="background-image: url('assets/fundo.png');">
-        <!-- Overlay para opacidade -->
-        <div class="absolute inset-0 bg-black bg-opacity-50">
-          <!-- Conteúdo do Header -->
-          <div class="relative z-10 flex flex-col justify-center items-center text-center h-full">
-            <h1 class="text-3xl md:text-6xl font-extrabold text-white mt-6">House Burgue</h1>
-            <h2 class="text-6xl text-gray-200 mt-4 mb-8">A&V</h2>
-            
-            <!-- Status da Lanchonete -->
-            <div id="status-container" class="relative z-10 mt-8 max-w-sm mx-auto py-2 text-center rounded-lg font-bold" style="width: 300px;"></div>
-          </div>
-        
-          <!-- Horário de Funcionamento no Rodapé -->
-          <div class="absolute bottom-0 w-full flex justify-center mr-2 ml-2">
-            <p class="bg-green-600 text-white px-4 py-2 rounded-lg shadow-md text-center max-w-sm">
-              Horário de funcionamento: De Sexta a Domingo, das 19:00 às 24:00
-            </p>
-          </div>
+    <header class="relative w-full  bg-cover bg-center">
+    
+      <!-- Conteúdo principal -->
+      <div class="relative z-10 pt-4 flex flex-col justify-center h-full text-center">
+        <div class="flex flex-col items-center justify-center gap-2">
+          <h1 class="text-6xl  font-bold drop-shadow-md text-gray-900">ERIC LANCHES</h1>
+          <h2 class="text-gray-800 mt-2  tracking-wide">Sabor que conquista</h2>
+    
+          <!-- Status -->
+          <div class="absolute inset-0" style="background-color: rgba(253, 224, 71, 0.7);"></div>
+           <!-- Horário -->
+       
+           <p class="bg-green-500  mt-2 py-2 rounded text-sm md:text-base shadow-lg inline-block">
+            Horário de funcionamento: De Terça a Domingo, das 19:00 às 24:00
+          </p>
+
         </div>
-      </header>
-      
+    
+       
+        
+      </div>
+    </header>
+    
     <!-- FIM DO HEADER -->
   <div class="relative min-h-screen">
 
-     <p class="text-sm md:3xl font-bold text-center mt-9 mb-6">Faça seu pedido aqui e saboreie o melhor Lanche da cidade </p>
-     <div class="text-center font-bold">
-      <marquee class=" p-4 text-ms" style="font-size:12px;">
-        APENAS DELIVERY
-      </marquee>
-          
-     </div> 
 
          <!-- INICIO DO MENU -->
               <div class="max-auto max-w-7xl px-2 my-2">
@@ -76,17 +71,17 @@
                         <img src="./assets/x-tudo.png" alt="foto do lanche" 
                         class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                         <div class="">
-                            <p class="font-bold">Burgue house</p>
+                            <p class="font-bold">MISTO</p>
                             <p class="text-sm">
-                              Pão, Hambúrgue 180g, molho,alface,tomate,cebola roxa,bacon,mussarela ou cheddar.
+                             pão, maionese,presunto e mussarela.
                             </p>
 
                             <div class="flex items-center gap-2 justify-between mt-3">
-                                <p class="font-bold text-lg text-red-500">R$ 22,00</p>
+                                <p class="font-bold text-lg text-red-500">R$ 9,00</p>
                                 <div class="botao-container">
                                   <button class="bg-blue-500 px-4 rounded add-to-cart-btn"
-                                   data-name="Burgue house"
-                                   data-price="22,00" >
+                                   data-name="Misto"
+                                   data-price="9,00" >
                                    <i class="fa fa-cart-plus text-lg text-white"></i>
                                   </button>
                                 </div>
@@ -98,17 +93,17 @@
                         <img src="./assets/x-tudo.png" alt="foto do lanche" 
                         class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                         <div class="">
-                            <p class="font-bold">Burgue bacon</p>
-                            <p class="text-sm">
-                              Pão, Hambúrgue 180g, molho,bacon,cebola crispy,mussarela ou cheddar.
+                            <p class="font-bold">AMERICANO</p>
+                            <p class="text-sm"style="max-width: 250px; word-wrap: break-word;">
+                              Pão,maionese,batata,ovo,alface,presunto,tomate e mussarela .
                             </p>
 
                             <div class="flex items-center gap-2 justify-between mt-3">
-                                <p class="font-bold text-lg text-red-500">R$ 24,00</p>
+                                <p class="font-bold text-lg text-red-500">R$11,00</p>
                                 <div class="botao-container">
                                    <button class="bg-blue-500 px-4 rounded add-to-cart-btn"
-                                    data-name="Burgue bacon"
-                                    data-price="22,00" >
+                                    data-name="Americano"
+                                    data-price="11,00" >
                                     <i class="fa fa-cart-plus text-lg text-white"></i>
                                    </button>
                                 </div>
@@ -120,17 +115,17 @@
                         <img src="./assets/x-tudo.png" alt="foto do lanche" 
                         class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                         <div class="">
-                            <p class="font-bold">Steak Burguer</p>
+                            <p class="font-bold">BAURU</p>
                             <p class="text-sm">
-                              Pão,steak,frango frito,molho,alface,tomate e mussarela.
+                              Pão,maionese, tomate,presunto e mussarela.
                             </p>
 
                             <div class="flex items-center gap-2 justify-between mt-3">
-                                <p class="font-bold text-lg text-red-500">R$ 18,00</p>
+                                <p class="font-bold text-lg text-red-500">R$ 10,00</p>
                                 <div class="botao-container">
                                     <button class="bg-blue-500 px-4 rounded add-to-cart-btn"
-                                     data-name="Steak Burguer"
-                                     data-price="20,00" >
+                                     data-name="Bauru"
+                                     data-price="10,00" >
                                      <i class="fa fa-cart-plus text-lg text-white"></i>
                                    </button>
                                 </div>
@@ -142,17 +137,17 @@
                         <img src="./assets/x-tudo.png" alt="foto do lanche" 
                         class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                         <div class="">
-                            <p class="font-bold">Tripo Burgue</p>
+                            <p class="font-bold">HAMBÚRGUER</p>
                             <p class="text-sm">
-                              Pão,molho,3 hamburguer 80g,alface,cebola roxa,mussarela ou cheddar.
+                              Pão,maionese,batata,tomate e Hamburguer.
                             </p>
 
                             <div class="flex items-center gap-2 justify-between mt-3">
-                                <p class="font-bold text-lg text-red-500">R$ 26,00</p>
+                                <p class="font-bold text-lg text-red-500">R$9,50</p>
                              <div class="botao-container">
                               <button class="bg-blue-500 px-4 rounded add-to-cart-btn"
-                                data-name="Tripo Burgue"
-                                data-price="26,00" >
+                                data-name="Hamburguer"
+                                data-price="9,50" >
                                 <i class="fa fa-cart-plus text-lg text-white"></i>
                               </button>
                              </div>
@@ -164,17 +159,17 @@
                         <img src="./assets/x-tudo.png" alt="foto do lanche" 
                         class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                         <div class="">
-                            <p class="font-bold">Burguer Duplo cheddar</p>
-                            <p class="text-sm">
-                              Pão,2 hamburguer 180g, molho, aface,tomate 2 cheddar.
+                            <p class="font-bold">X-BURGUER</p>
+                            <p class="text-sm" style="max-width: 250px; word-wrap: break-word;">
+                              Pão,maionese, hamburguer,batata,tomate,presunto e mussarela.
                             </p>
 
                             <div class="flex items-center gap-2 justify-between mt-3">
-                                <p class="font-bold text-lg text-red-500">R$ 33,00</p>
+                                <p class="font-bold text-lg text-red-500">R$ 11,00</p>
                              <div class="botao-container">
                                <button class="bg-blue-500 px-4 rounded add-to-cart-btn"
-                                 data-name="Burguer Duplo cheddar"
-                                 data-price="33,00" >
+                                 data-name="X-Burguer"
+                                 data-price="11,00" >
                                  <i class="fa fa-cart-plus text-lg text-white"></i>
                                </button>
                              </div>
@@ -186,17 +181,17 @@
                         <img src="./assets/x-tudo.png" alt="foto do lanche" 
                         class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                         <div class="">
-                            <p class="font-bold">Smash Burguer</p>
-                            <p class="text-sm">
-                              pão,molho, 2 hamburgue 120g,cebola caramelizada alface,mussarela ou cheddar.
+                            <p class="font-bold">X-SALADA</p>
+                            <p class="text-sm"  style="max-width: 250px; word-wrap: break-word;">
+                              Pão,maionese,batata,tomate,alface,hamburguer,Pão,maionese,batata,tomate ,presunto e mussarela.
                             </p>
 
                             <div class="flex items-center gap-2 justify-between mt-3">
-                                <p class="font-bold text-lg text-red-500">R$ 35,00</p>
+                                <p class="font-bold text-lg text-red-500">R$ 10,00</p>
                                <div class="botao-container">
                                 <button class="bg-blue-500 px-4 rounded add-to-cart-btn"
-                                  data-name="Smash Burguer"
-                                  data-price="35,00" >
+                                  data-name="x-Salada"
+                                  data-price="10,00" >
                                   <i class="fa fa-cart-plus text-lg text-white"></i>
                                 </button>
                                </div>
@@ -208,17 +203,17 @@
                         <img src="./assets/x-tudo.png" alt="foto do lanche" 
                         class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                         <div class="">
-                            <p class="font-bold">Salada Burguer</p>
-                            <p class="text-sm">
-                              Pão, Hambúrgue 180g, molho,alface,tomate,cebola roxa e mussarela.
+                            <p class="font-bold">X-ESPECIAL</p>
+                            <p class="text-sm"style="max-width: 250px; word-wrap: break-word;" >
+                              Pão,maionese,batata,tomate,milho,alface,hamburguer,presunto e mussarela.
                             </p>
 
                             <div class="flex items-center gap-2 justify-between mt-3">
-                                <p class="font-bold text-lg text-red-500">R$ 21,00</p>
+                                <p class="font-bold text-lg text-red-500">R$ 13,00</p>
                               <div class="botao-container">
                                 <button class="bg-blue-500 px-4 rounded add-to-cart-btn"
-                                  data-name="Salada Burguer"
-                                  data-price="21,00" >
+                                  data-name="X-Especial"
+                                  data-price="13,00" >
                                   <i class="fa fa-cart-plus text-lg text-white"></i>
                                 </button>
                               </div>
@@ -230,17 +225,17 @@
                         <img src="./assets/x-tudo.png" alt="foto do lanche" 
                         class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                         <div class="">
-                            <p class="font-bold">Costela Burguer</p>
-                            <p class="text-sm">
-                              Pão,molho,costela desfiada, alface,cebola roxa e mussarela ou cheddar.
+                            <p class="font-bold">X-EGG</p>
+                            <p class="text-sm"style="max-width: 250px; word-wrap: break-word;">
+                              Pão,maionese,batata,tomate,ovo,hambúrguer,presunto e mussarela.
                             </p>
 
                             <div class="flex items-center gap-2 justify-between mt-3">
-                                <p class="font-bold text-lg text-red-500">R$ 21,00</p>
+                                <p class="font-bold text-lg text-red-500">R$ 13,50</p>
                               <div class="botao-container">
                                 <button class="bg-blue-500 px-4 rounded add-to-cart-btn"
-                                  data-name="Costela Burguer"
-                                  data-price="20,00" >
+                                  data-name="X-egg"
+                                  data-price="13,50" >
                                   <i class="fa fa-cart-plus text-lg text-white"></i>
                                 </button>
                               </div>
@@ -248,11 +243,584 @@
                         </div>
                       </div>
                       <div class=" flex gap-2">
+                        <img src="./assets/x-tudo.png" alt="foto do lanche" 
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                        <div class="">
+                            <p class="font-bold">X-EGG ESPECIAL</p>
+                            <p class="text-sm"style="max-width: 250px; word-wrap: break-word;">
+                              Pão,maionese,batata,tomate,milho,alface,ovo,hambúrguer,presunto e mussarela.
+                            </p>
+
+                            <div class="flex items-center gap-2 justify-between mt-3">
+                                <p class="font-bold text-lg text-red-500">R$ 15,00</p>
+                              <div class="botao-container">
+                                <button class="bg-blue-500 px-4 rounded add-to-cart-btn"
+                                  data-name="X-egg especial"
+                                  data-price="15,00" >
+                                  <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class=" flex gap-2">
+                        <img src="./assets/x-tudo.png" alt="foto do lanche" 
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                        <div class="">
+                            <p class="font-bold">X-EGG BACON</p>
+                            <p class="text-sm"style="max-width: 250px; word-wrap: break-word;">
+                              Pão,maionese,batata,tomate,ovo,bacon,hambúrguer,presunto e mussarela.
+                            </p>
+
+                            <div class="flex items-center gap-2 justify-between mt-3">
+                                <p class="font-bold text-lg text-red-500">R$ 17,00</p>
+                              <div class="botao-container">
+                                <button class="bg-blue-500 px-4 rounded add-to-cart-btn"
+                                  data-name="X-egg bacon"
+                                  data-price="17,00" >
+                                  <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class=" flex gap-2">
+                        <img src="./assets/x-tudo.png" alt="foto do lanche" 
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                        <div class="">
+                            <p class="font-bold">X-EGG SALADA</p>
+                            <p class="text-sm"style="max-width: 250px; word-wrap: break-word;">
+                              Pão,maionese,batata,tomate,ovo,alface,hambúrguer,presunto e mussarela.
+                            </p>
+
+                            <div class="flex items-center gap-2 justify-between mt-3">
+                                <p class="font-bold text-lg text-red-500">R$ 14,00</p>
+                              <div class="botao-container">
+                                <button class="bg-blue-500 px-4 rounded add-to-cart-btn"
+                                  data-name="X-egg salada"
+                                  data-price="14,00" >
+                                  <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class=" flex gap-2">
+                        <img src="./assets/x-tudo.png" alt="foto do lanche" 
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                        <div class="">
+                            <p class="font-bold">X-EGG CALABRESA</p>
+                            <p class="text-sm"style="max-width: 250px; word-wrap: break-word;">
+                              Pão,maionese,batata,tomate,ovo,calabrsa,hambúrguer,presunto e mussarela.
+                            </p>
+
+                            <div class="flex items-center gap-2 justify-between mt-3">
+                                <p class="font-bold text-lg text-red-500">R$ 17,00</p>
+                              <div class="botao-container">
+                                <button class="bg-blue-500 px-4 rounded add-to-cart-btn"
+                                  data-name="X-egg calabresa"
+                                  data-price="17,00" >
+                                  <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class=" flex gap-2">
+                        <img src="./assets/x-tudo.png" alt="foto do lanche" 
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                        <div class="">
+                            <p class="font-bold">X-BACON</p>
+                            <p class="text-sm"style="max-width: 250px; word-wrap: break-word;">
+                              Pão,maionese,batata,tomate,ovo,bacon,hambúrguer,presunto e mussarela.
+                            </p>
+
+                            <div class="flex items-center gap-2 justify-between mt-3">
+                                <p class="font-bold text-lg text-red-500">R$ 16,00</p>
+                              <div class="botao-container">
+                                <button class="bg-blue-500 px-4 rounded add-to-cart-btn"
+                                  data-name="X-Bacon"
+                                  data-price="16,00" >
+                                  <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class=" flex gap-2">
+                        <img src="./assets/x-tudo.png" alt="foto do lanche" 
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                        <div class="">
+                            <p class="font-bold">X-BACON SALADA</p>
+                            <p class="text-sm"style="max-width: 250px; word-wrap: break-word;">
+                              Pão,maionese,batata,tomate,alface,bacon,hambúrguer,presunto e mussarela.
+                            </p>
+
+                            <div class="flex items-center gap-2 justify-between mt-3">
+                                <p class="font-bold text-lg text-red-500">R$ 16,00</p>
+                              <div class="botao-container">
+                                <button class="bg-blue-500 px-4 rounded add-to-cart-btn"
+                                  data-name="X-Bacon salada"
+                                  data-price="16,00" >
+                                  <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class=" flex gap-2">
+                        <img src="./assets/x-tudo.png" alt="foto do lanche" 
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                        <div class="">
+                            <p class="font-bold">X-CALABRESA</p>
+                            <p class="text-sm"style="max-width: 250px; word-wrap: break-word;">
+                              Pão,maionese,batata,tomate,calabresa,presunto e mussarela.
+                            </p>
+
+                            <div class="flex items-center gap-2 justify-between mt-3">
+                                <p class="font-bold text-lg text-red-500">R$ 14,00</p>
+                              <div class="botao-container">
+                                <button class="bg-blue-500 px-4 rounded add-to-cart-btn"
+                                  data-name="X-Calabresa"
+                                  data-price="14,00" >
+                                  <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class=" flex gap-2">
+                        <img src="./assets/x-tudo.png" alt="foto do lanche" 
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                        <div class="">
+                            <p class="font-bold">X-CALABRESA-2</p>
+                            <p class="text-sm"style="max-width: 250px; word-wrap: break-word;">
+                              Pão,maionese,batata,tomate,calabresa,hambúrguer, presunto e mussarela.
+                            </p>
+
+                            <div class="flex items-center gap-2 justify-between mt-3">
+                                <p class="font-bold text-lg text-red-500">R$ 16,00</p>
+                              <div class="botao-container">
+                                <button class="bg-blue-500 px-4 rounded add-to-cart-btn"
+                                  data-name="X-Calabresa-2"
+                                  data-price="16,00" >
+                                  <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class=" flex gap-2">
+                        <img src="./assets/x-tudo.png" alt="foto do lanche" 
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                        <div class="">
+                            <p class="font-bold">X-CALABRESA SALADA</p>
+                            <p class="text-sm"style="max-width: 250px; word-wrap: break-word;">
+                              Pão,maionese,batata,tomate,alface,calabresa,hambúrguer, presunto e mussarela.
+                            </p>
+
+                            <div class="flex items-center gap-2 justify-between mt-3">
+                                <p class="font-bold text-lg text-red-500">R$ 16,50</p>
+                              <div class="botao-container">
+                                <button class="bg-blue-500 px-4 rounded add-to-cart-btn"
+                                  data-name="X-Calabresa salada"
+                                  data-price="16,50" >
+                                  <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class=" flex gap-2">
+                        <img src="./assets/x-tudo.png" alt="foto do lanche" 
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                        <div class="">
+                            <p class="font-bold">MAC CHEDDAR</p>
+                            <p class="text-sm"style="max-width: 250px; word-wrap: break-word;">
+                              Pão,maionese,batata,tomate,2hambúrguer,cheddar,bacon,presunto e mussarela.
+                            </p>
+
+                            <div class="flex items-center gap-2 justify-between mt-3">
+                                <p class="font-bold text-lg text-red-500">R$ 19,50</p>
+                              <div class="botao-container">
+                                <button class="bg-blue-500 px-4 rounded add-to-cart-btn"
+                                  data-name="Mac cheddar"
+                                  data-price="19,50" >
+                                  <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class=" flex gap-2">
+                        <img src="./assets/x-tudo.png" alt="foto do lanche" 
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                        <div class="">
+                            <p class="font-bold">X-CHAPÃO</p>
+                            <p class="text-sm" style="max-width: 250px; word-wrap: break-word;">
+                              Pão,maionese,batata,tomate,alface,milho,2hambúrguer,frango,ovo,calabresa,bacon,catupiry,presunto e mussarela.
+                            </p>
+
+                            <div class="flex items-center gap-2 justify-between mt-3">
+                                <p class="font-bold text-lg text-red-500">R$ 30,00</p>
+                              <div class="botao-container">
+                                <button class="bg-blue-500 px-4 rounded add-to-cart-btn"
+                                  data-name="X-Chapão"
+                                  data-price="30,00" >
+                                  <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class=" flex gap-2">
+                        <img src="./assets/x-tudo.png" alt="foto do lanche" 
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                        <div class="">
+                            <p class="font-bold">X-MONTANHA</p>
+                            <p class="text-sm" style="max-width: 250px; word-wrap: break-word;">
+                              Pão,maionese,batata,tomate,bacon,catupiry,1 salsicha,2 ovos,2 hambúrgures,2 presuntos e 2 mussarelas.
+                            </p>
+
+                            <div class="flex items-center gap-2 justify-between mt-3">
+                                <p class="font-bold text-lg text-red-500">R$ 27,50</p>
+                              <div class="botao-container">
+                                <button class="bg-blue-500 px-4 rounded add-to-cart-btn"
+                                  data-name="X-Montanha"
+                                  data-price="27,50" >
+                                  <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class=" flex gap-2">
+                        <img src="./assets/x-tudo.png" alt="foto do lanche" 
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                        <div class="">
+                            <p class="font-bold">X-BACANA</p>
+                            <p class="text-sm"style="max-width: 250px; word-wrap: break-word;">
+                              Pão,maionese,batata,tomate,alface,milho,ovo,1 salsicha,bacon,presunto e mussarela.
+                            </p>
+
+                            <div class="flex items-center gap-2 justify-between mt-3">
+                                <p class="font-bold text-lg text-red-500">R$ 19,00</p>
+                              <div class="botao-container">
+                                <button class="bg-blue-500 px-4 rounded add-to-cart-btn"
+                                  data-name="X-Bacana"
+                                  data-price="19,00" >
+                                  <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class=" flex gap-2">
+                        <img src="./assets/x-tudo.png" alt="foto do lanche" 
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                        <div class="">
+                            <p class="font-bold">BIG BURGUE</p>
+                            <p class="text-sm"style="max-width: 250px; word-wrap: break-word;">
+                              Pão,maionese,batata,tomate,milho,2 hambúrgures,2-presuntos e 2-mussarelas.
+                            </p>
+
+                            <div class="flex items-center gap-2 justify-between mt-3">
+                                <p class="font-bold text-lg text-red-500">R$ 18,50</p>
+                              <div class="botao-container">
+                                <button class="bg-blue-500 px-4 rounded add-to-cart-btn"
+                                  data-name="Big Burguer"
+                                  data-price="18,50" >
+                                  <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                      
+                      <div class=" flex gap-2">
+                        <img src="./assets/x-tudo.png" alt="foto do lanche" 
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                        <div class="">
+                            <p class="font-bold">X-MARAVILHA</p>
+                            <p class="text-sm"style="max-width: 250px; word-wrap: break-word;">
+                              Pão,maionese,batata,tomate,alface,hambúrgures,frango,ovo,bacon,presunto e mussarela.
+                            </p>
+
+                            <div class="flex items-center gap-2 justify-between mt-3">
+                                <p class="font-bold text-lg text-red-500">R$ 20,00</p>
+                              <div class="botao-container">
+                                <button class="bg-blue-500 px-4 rounded add-to-cart-btn"
+                                  data-name="X-Maravilha"
+                                  data-price="20,00" >
+                                  <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                              </div>
+                            </div>
+                        </div>
+                      </div>  
+
+                      <div class=" flex gap-2">
+                        <img src="./assets/x-tudo.png" alt="foto do lanche" 
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                        <div class="">
+                            <p class="font-bold">X-MAC ERIC</p>
+                            <p class="text-sm"style="max-width: 250px; word-wrap: break-word;">
+                              Pão,maionese,batata,tomate,alface,milho,hambúrgures,ovo,frango,calabresa,bacon,catupiry,presunto e mussarela.
+                            </p>
+
+                            <div class="flex items-center gap-2 justify-between mt-3">
+                                <p class="font-bold text-lg text-red-500">R$ 24,00</p>
+                              <div class="botao-container">
+                                <button class="bg-blue-500 px-4 rounded add-to-cart-btn"
+                                  data-name="X-Mac Eric"
+                                  data-price="24,00" >
+                                  <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                              </div>
+                            </div>
+                        </div>
+                      </div>  
+
+                      <div class=" flex gap-2">
+                        <img src="./assets/x-tudo.png" alt="foto do lanche" 
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                        <div class="">
+                            <p class="font-bold">X-FRANGO</p>
+                            <p class="text-sm"style="max-width: 250px; word-wrap: break-word;">
+                              Pão,maionese,batata,tomate,frango,presunto e mussarela.
+                            </p>
+
+                            <div class="flex items-center gap-2 justify-between mt-3">
+                                <p class="font-bold text-lg text-red-500">R$ 15,00</p>
+                              <div class="botao-container">
+                                <button class="bg-blue-500 px-4 rounded add-to-cart-btn"
+                                  data-name="X-Frango"
+                                  data-price="15,00" >
+                                  <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                              </div>
+                            </div>
+                        </div>
+                      </div> 
+
+                      <div class=" flex gap-2">
+                        <img src="./assets/x-tudo.png" alt="foto do lanche" 
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                        <div class="">
+                            <p class="font-bold">X-FRANGO CALABRESA</p>
+                            <p class="text-sm"style="max-width: 250px; word-wrap: break-word;">
+                              Pão,maionese,batata,tomate,alface,milho,calabresa,frango,presunto e mussarela.
+                            </p>
+
+                            <div class="flex items-center gap-2 justify-between mt-3">
+                                <p class="font-bold text-lg text-red-500">R$ 15,00</p>
+                              <div class="botao-container">
+                                <button class="bg-blue-500 px-4 rounded add-to-cart-btn"
+                                  data-name="X-Frango"
+                                  data-price="15,00" >
+                                  <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                              </div>
+                            </div>
+                        </div>
+                      </div> 
+
+                      <div class=" flex gap-2">
+                        <img src="./assets/x-tudo.png" alt="foto do lanche" 
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                        <div class="">
+                            <p class="font-bold">X-FRANGO BACON</p>
+                            <p class="text-sm"style="max-width: 250px; word-wrap: break-word;">
+                              Pão,maionese,batata,tomate,alface,milho,bacon,frango,presunto e mussarela.
+                            </p>
+
+                            <div class="flex items-center gap-2 justify-between mt-3">
+                                <p class="font-bold text-lg text-red-500">R$ 18,00</p>
+                              <div class="botao-container">
+                                <button class="bg-blue-500 px-4 rounded add-to-cart-btn"
+                                  data-name="X-Frango Bacon"
+                                  data-price="18,00" >
+                                  <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                              </div>
+                            </div>
+                        </div>
+                      </div> 
+
+                      <div class=" flex gap-2">
+                        <img src="./assets/x-tudo.png" alt="foto do lanche" 
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                        <div class="">
+                            <p class="font-bold">X-FRANGO CATUPIRY</p>
+                            <p class="text-sm"style="max-width: 250px; word-wrap: break-word;">
+                              Pão,maionese,batata,tomate,alface,milho,frango,catupiry,presunto e mussarela.
+                            </p>
+
+                            <div class="flex items-center gap-2 justify-between mt-3">
+                                <p class="font-bold text-lg text-red-500">R$ 18,50</p>
+                              <div class="botao-container">
+                                <button class="bg-blue-500 px-4 rounded add-to-cart-btn"
+                                  data-name="X-Frango Catupiry"
+                                  data-price="18,50" >
+                                  <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                              </div>
+                            </div>
+                        </div>
+                      </div> 
+
+                      <div class=" flex gap-2">
+                        <img src="./assets/x-tudo.png" alt="foto do lanche" 
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                        <div class="">
+                            <p class="font-bold">X-FRANGO HAMBÚRGUER</p>
+                            <p class="text-sm"style="max-width: 250px; word-wrap: break-word;">
+                              Pão,maionese,batata,tomate,alface,milho,frango,hambúrguer,presunto e mussarela.
+                            </p>
+
+                            <div class="flex items-center gap-2 justify-between mt-3">
+                                <p class="font-bold text-lg text-red-500">R$ 19,00</p>
+                              <div class="botao-container">
+                                <button class="bg-blue-500 px-4 rounded add-to-cart-btn"
+                                  data-name="X-Frango Hambúrguer"
+                                  data-price="19,00" >
+                                  <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                              </div>
+                            </div>
+                        </div>
+                      </div> 
+
+                      <div class=" flex gap-2">
+                        <img src="./assets/x-tudo.png" alt="foto do lanche" 
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                        <div class="">
+                            <p class="font-bold">X-FRANGO EGG</p>
+                            <p class="text-sm"style="max-width: 250px; word-wrap: break-word;">
+                              Pão,maionese,batata,tomate,alface,milho,frango,ovo,presunto e mussarela.
+                            </p>
+
+                            <div class="flex items-center gap-2 justify-between mt-3">
+                                <p class="font-bold text-lg text-red-500">R$ 18,00</p>
+                              <div class="botao-container">
+                                <button class="bg-blue-500 px-4 rounded add-to-cart-btn"
+                                  data-name="X-Frango Egg"
+                                  data-price="18,00" >
+                                  <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                              </div>
+                            </div>
+                        </div>
+                      </div> 
+
+                      <div class=" flex gap-2">
+                        <img src="./assets/x-tudo.png" alt="foto do lanche" 
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                        <div class="">
+                            <p class="font-bold">X-TUDO</p>
+                            <p class="text-sm"style="max-width: 250px; word-wrap: break-word;">
+                              Pão,maionese,batata,tomate,alface,milho,ovo,hambúrguer,catupiry,bacon,calaresa,presunto e mussarela.
+                            </p>
+
+                            <div class="flex items-center gap-2 justify-between mt-3">
+                                <p class="font-bold text-lg text-red-500">R$ 22,00</p>
+                              <div class="botao-container">
+                                <button class="bg-blue-500 px-4 rounded add-to-cart-btn"
+                                  data-name="X-Tudo"
+                                  data-price="22,00" >
+                                  <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                              </div>
+                            </div>
+                        </div>
+                      </div> 
+
+                      <div class=" flex gap-2">
+                        <img src="./assets/x-tudo.png" alt="foto do lanche" 
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                        <div class="">
+                            <p class="font-bold">X-TUDO-2</p>
+                            <p class="text-sm"style="max-width: 250px; word-wrap: break-word;">
+                              Pão,maionese,batata,tomate,alface,milho,ovo,hambúrguer,frango,salsicha,catupiry,bacon,calaresa,presunto e mussarela.
+                            </p>
+
+                            <div class="flex items-center gap-2 justify-between mt-3">
+                                <p class="font-bold text-lg text-red-500">R$ 26,00</p>
+                              <div class="botao-container">
+                                <button class="bg-blue-500 px-4 rounded add-to-cart-btn"
+                                  data-name="X-Tudo-2"
+                                  data-price="26,00" >
+                                  <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                              </div>
+                            </div>
+                        </div>
+                      </div> 
+
+                      <div class=" flex gap-2">
+                        <img src="./assets/x-tudo.png" alt="foto do lanche" 
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                        <div class="">
+                            <p class="font-bold">X-VEGETARIANO</p>
+                            <p class="text-sm"style="max-width: 250px; word-wrap: break-word;">
+                              Pão,maionese,batata,tomate,alface,milho,ovo,catupiry e mussarela.
+                            </p>
+
+                            <div class="flex items-center gap-2 justify-between mt-3">
+                                <p class="font-bold text-lg text-red-500">R$ 14,00</p>
+                              <div class="botao-container">
+                                <button class="bg-blue-500 px-4 rounded add-to-cart-btn"
+                                  data-name="X-Vegetariano"
+                                  data-price="14,00" >
+                                  <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                              </div>
+                            </div>
+                        </div>
+                      </div> 
+
+                      <div class=" flex gap-2">
+                        <img src="./assets/x-tudo.png" alt="foto do lanche" 
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                        <div class="">
+                            <p class="font-bold">X-FRANGO 3 Queijos</p>
+                            <p class="text-sm"style="max-width: 250px; word-wrap: break-word;">
+                              Pão,maionese,batata,tomate,alface,milho,frango,catupiry,cheddar e mussarela.
+                            </p>
+
+                            <div class="flex items-center gap-2 justify-between mt-3">
+                                <p class="font-bold text-lg text-red-500">R$ 18,50</p>
+                              <div class="botao-container">
+                                <button class="bg-blue-500 px-4 rounded add-to-cart-btn"
+                                  data-name="X-Frango 3 Queijo"
+                                  data-price="18,50" >
+                                  <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                              </div>
+                            </div>
+                        </div>
+                      </div> 
+
+
+                        
+                      <!-- <div class=" flex gap-2">
                         <img src="./assets/ffritas.png" alt="foto do lanche" 
                         class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                         <div class="">
                             <p class="font-bold">Para completar seu lanche adicione uma porção de batata frita</p>
-                            <p class="text-sm">
+                            <p class="text-sm"style="max-width: 250px; word-wrap: break-word;">
                              por apenas R$ 7,00
                             </p>
 
@@ -267,7 +835,7 @@
                               </div>
                             </div>
                         </div>
-                      </div>
+                      </div> -->
                   
 
                    <!-- FIM PRODUTO-ITEM -->
@@ -275,7 +843,7 @@
                 </main>
 
                       <!-- porções -->
-                        <div class="max-auto max-w-7xl px-2 my-2">
+                        <!-- <div class="max-auto max-w-7xl px-2 my-2">
                           <h2 class="font-bold text-3xl text-center p-4 items-center" style="background-color: rgb(211, 200, 200); padding:4px;">PORÇOẼS</h2>
                         </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 lg:px-8 mx-auto max-w-7xl px-2 mb-15">
@@ -346,80 +914,26 @@
                         </div>
                       </div>
                     
-                </div>
-                <div class="max-auto max-w-7xl px-2 my-2">
+                </div> -->
+                <!-- <div class="max-auto max-w-7xl px-2 my-2">
                   <p class="font-bold text-3xl text-center p-4 items-center" style="background-color: rgb(210, 202, 202); padding:4px;">ADICIONAIS</p>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 lg:px-8 mx-auto max-w-7xl px-2 mb-15">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 lg:px-8 mx-auto max-w-7xl px-2 mb-15"> -->
                  
-                   <!-- Adicional - Batata Palito -->
-                  <div class="flex gap-2 mb-4 ">
-                    <div>
-                      <p class="font-bold">Adicional: Batata Palito</p>
-                      <div class="flex items-center justify-between mt-2">
-                        <p class="font-bold text-red-500">R$ 7,00</p>
-                        <button class="bg-blue-500 px-4 py-1 rounded add-to-cart-btn"
-                                data-name="Adicional: Batata Palito"
-                                data-price="7.00">
-                          <i class="fa fa-cart-plus text-white"></i>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
+                  
+                  
 
-                    <!-- Adicional - Mussarela -->
-                    <div class="flex gap-2 mb-4">
-                      <div>
-                        <p class="font-bold">Adicional: Mussarela</p>
-                        <div class="flex items-center justify-between mt-2">
-                          <p class="font-bold text-red-500">R$ 3,50</p>
-                          <button class="bg-blue-500 px-4 py-1 rounded add-to-cart-btn"
-                                  data-name="Adicional: Mussarela"
-                                  data-price="3.50">
-                            <i class="fa fa-cart-plus text-white"></i>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
 
-                    <!-- Adicional - Cheddar -->
-                  <div class="flex gap-2 mb-4">
-                    <div>
-                      <p class="font-bold">Adicional: Cheddar</p>
-                      <div class="flex items-center justify-between mt-2">
-                        <p class="font-bold text-red-500">R$ 4,00</p>
-                        <button class="bg-blue-500 px-4 py-1 rounded add-to-cart-btn"
-                                data-name="Adicional: Chedar"
-                                data-price="4.00">
-                          <i class="fa fa-cart-plus text-white"></i>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
+                   
                  
-                    <!-- Adicional - Bacon -->
-                    <div class="flex gap-2 mb-4">
-                      <div>
-                        <p class="font-bold">Adicional: Bacon</p>
-                        <div class="flex items-center justify-between mt-2">
-                          <p class="font-bold text-red-500">R$ 5,00</p>
-                          <button class="bg-blue-500 px-4 py-1 rounded add-to-cart-btn"
-                                  data-name="Adicional: Bacon"
-                                  data-price="5.00">
-                            <i class="fa fa-cart-plus text-white"></i>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-
-                </div>
+                
                 
 
-                <div class="max-auto max-w-7xl px-2 my-2">
+                 <div class="max-auto max-w-7xl px-2 my-2">
                     <h2 class="font-bold text-3xl text-center p-4 items-center" style="background-color: rgb(210, 202, 202); padding:4px;">BEBIDAS</h2>
-                </div>
+                </div> 
                 <!-- GRIDI BEBIDAS -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 lg:px-8 mx-auto max-w-7xl px-2 mb-15" id="menu">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-10 lg:px-8 mx-auto max-w-7xl px-2 mb-15" id="menu">
                     <div class=" flex gap-2">
                         <img src="./assets/cocalata.png" alt="foto do lanche" 
                         class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">

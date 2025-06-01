@@ -103,7 +103,7 @@ function updateCartModal() {
       .map((a) => `${a.name} (+R$ ${a.price.toFixed(2)})`)
       .join(", ");
     const adicionaisTotal = item.adicionais.reduce((acc, a) => acc + a.price, 0);
-    const itemTotal = (item.price + adicionaisTotal) * item.quantity;
+    const itemTotal = (item.price * item.quantity) + adicionaisTotal;
     total += itemTotal;
 
     const el = document.createElement("div");
@@ -121,6 +121,7 @@ function updateCartModal() {
          
           <p class="font-medium">R$ ${itemTotal.toFixed(2)}</p>
         </div>
+      
         <button class="remove-btn text-red-500 border p-2 rounded bg-slate-300 hover:text-emerald-600" data-index="${index}">remover</button>
       </div>
     `;

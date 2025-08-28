@@ -345,7 +345,7 @@ mensagem += `*Forma de Pagamento:* ${pagamentoTexto}%0A`;
 
 
 
-  const numeroLanchonete = '5535998464219';
+  const numeroLanchonete = '5535999346299';
   const NumeroHost = '5535998464219' // Substitua pelo seu número real
 
   const url = `https://wa.me/${numeroLanchonete}?text=${mensagem}`;

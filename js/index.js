@@ -266,7 +266,7 @@ function enviarPedido() {
   const carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
   if (carrinho.length === 0) return alert('Carrinho vazio');
 
-  let mensagem = '*🛒 Pedido ERICK LANCHES*%0A%0A';
+  let mensagem = '*🛒 PEDIDO AMIGÃO LANCHES*%0A%0A';
   let total = 0;
 
   carrinho.forEach(item => {

@@ -32,7 +32,7 @@ cd menu-online
 
 📧 Email: alexandresusaroberto@gmail.com
 
-📲 WhatsApp: Clique aqui
+📲 WhatsApp: [Clique aqui](https://wa.me/5535998464219)
 
 
 

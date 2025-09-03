@@ -1,4 +1,4 @@
- [Menu Online](screnshot.png)
+ [Menu Online](assests/screnshot.png)
 
 # 🍔 Menu Online - Pedidos via WhatsApp
 
